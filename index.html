@@ -1,0 +1,19 @@
+<script src="socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:3467');
+  
+  socket.emit('new_user');
+
+  socket.on('connected', function (data) {
+    console.log('connected: '+data);
+  });
+  socket.on('disconnected', function (data) {
+    console.log('disconnected: '+data);
+  });
+  socket.on('new_message', function (data) {
+    console.log('new_message: '+data);
+  });
+  socket.on('new_user', function (data) {
+    console.log('new_user: '+data);
+  });
+</script>
