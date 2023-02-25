@@ -27,9 +27,11 @@ var pool = mysql.createPool({
 
 server.listen(3467);
 
+/*
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
+*/
 
 ////////////////////////////////////////
   
