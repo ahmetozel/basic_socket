@@ -3,8 +3,8 @@ const path = require('path')
 var app = require('express')();
 var server = require('http').Server(app, {
   cors: {
-    origin: "*",
-    methods: ["GET", "POST"]
+    origin: "https://localhost",
+    credentials: true
   }
 });
 /*
