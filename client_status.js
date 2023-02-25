@@ -78,4 +78,4 @@ function mysql_query(queryString)
 }
 */
 
-console.log('Baslatildi :)');
+console.log('Baslatildi :)_2');
