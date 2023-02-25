@@ -1,7 +1,12 @@
 const fs = require('fs')
 const path = require('path')
 var app = require('express')();
-var server = require('http').Server(app);
+var server = require('http').Server(app, {
+  cors: {
+    origin: "*",
+    methods: ["GET", "POST"]
+  }
+});
 /*
 const server = require('https').createServer({
     key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
