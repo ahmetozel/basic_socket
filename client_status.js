@@ -3,7 +3,7 @@ const path = require('path')
 var app = require('express')();
 var server = require('http').Server(app, {
   cors: {
-    origin: "https://localhost"
+    origin: '*'
   }
 });
 /*
@@ -77,4 +77,4 @@ function mysql_query(queryString)
 }
 */
 
-console.log('Baslatildi :)_3');
+console.log('Baslatildi :)_4');
